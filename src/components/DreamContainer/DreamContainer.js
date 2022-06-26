@@ -43,7 +43,7 @@ function DreamContainer() {
 
     return (
         <>
-            <Typography variant='h3' style={{marginTop: '50px'}}>📖 The ENS Dream Journal</Typography>
+            <Typography variant='h3' style={{marginTop: '50px'}}>📖 ENS Dream Journal</Typography>
             <Typography variant='h5' style={{margin: '20px'}}> Discover dreams from around the world, and contribute your own</Typography>
             <DreamPage payload={ipfsPayload}/>
             <div>
@@ -57,9 +57,10 @@ function DreamContainer() {
             <Typography color='white' style={{marginBottom: '20px'}}>
                 {subdomain}.dreamjournal.eth
             </Typography>
+            <br/><br/>
             <Paper color='white'>
             <TextField  
-                label='Title' 
+                label='Search IPFS'
                 variant='outlined' 
                 value={ipfsHash}
                 onChange={e => setIpfsHash(e.target.value)}

@@ -37,10 +37,10 @@ function CreateDream(props) {
         <>
             <Typography variant='h3'>Mint a Page of the Dream Journal</Typography>
             <Typography variant='h6' style={{margin: '20px'}}> You will receive an ENS subdomain of dreamjournal.eth</Typography>
-            <Paper>
+            <Paper style={{padding: '15px'}}>
                 <TextField  
                     label='Title' 
-                    variant='outlined' 
+                    variant='outlined'
                     value={dreamTitle}
                     onChange={e => setDreamTitle(e.target.value)}
                     sx={{
@@ -49,7 +49,7 @@ function CreateDream(props) {
                         }
                     }}
                 />
-                <br/>
+                <br/><br/>
                 <TextField 
                     label='ENS or Wallet Address' 
                     variant='outlined'
@@ -61,7 +61,7 @@ function CreateDream(props) {
                         }
                     }}
                 />
-                <br/>
+                <br/><br/>
                 <TextField 
                     label='Dream Description' 
                     variant='outlined' 

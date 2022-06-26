@@ -1,5 +1,4 @@
 import { Paper, Typography } from '@mui/material';
-import './DreamPage.css';
 
 function DreamPage(props) {
 
